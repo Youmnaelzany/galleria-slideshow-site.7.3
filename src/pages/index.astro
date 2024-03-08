@@ -1,10 +1,288 @@
 ---
+import Header from "@/components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import "@/styles/globals.css";
 ---
 
 <Layout title="Frontend Mentor | Galleria slideshow site">
-  <main></main>
+  <Header />
+  <main>
+    <!-- Top Border -->
+    <section class="h-[0.0625rem] w-[83.5rem] bg-[#E5E5E5] lg:mx-6"></section>
+    <!-- Gallery -->
+    <section
+      class="wrapper grid-col-1 md:grid-col-2 mx-6 mb-6 mt-[1.44rem] grid gap-6 gap-x-10 gap-y-[2.56rem] md:mb-10 md:max-xl:mx-10 md:max-xl:mt-[2.56rem] md:max-xl:gap-10 lg:mb-[2.94rem] lg:grid-cols-4 lg:gap-10"
+    >
+      <!-- Starry Night -->
+      <div
+        class="box1 flex h-[15.625rem] w-[20.4375rem] flex-col justify-end bg-[url('/images/starry-night/thumbnail.jpg')] bg-cover bg-no-repeat pb-8 pl-8 text-[#fff] md:w-[20.25rem] lg:w-[19.375rem]"
+      >
+        <!-- Painting Name -->
+        <div class="w-[15.375rem]">
+          <a
+            href="/starry-night"
+            class="text-2xl font-bold leading-normal hover:cursor-pointer"
+            >Starry Night</a
+          >
+        </div>
+        <!-- Painting Artist -->
+        <div class="">
+          <h3 class="text-sm font-normal leading-normal opacity-[0.7528]">
+            Vincent Van Gogh
+          </h3>
+        </div>
+      </div>
+      <!-- Girl with a Pearl Earring -->
+      <div
+        class="box2 flex h-[25rem] w-[20.4375rem] flex-col justify-end bg-[url('/images/girl-with-pearl-earring/thumbnail.jpg')] bg-cover bg-no-repeat pb-8 pl-8 text-[#fff] md:w-[20.25rem] lg:w-[19.375rem]"
+      >
+        <!--Painting Name  -->
+        <div class="w-[15.375rem]">
+          <a
+            href="/girl-with-pearl-earringt"
+            class="text-2xl font-bold leading-normal"
+            >Girl with a Pearl Earring</a
+          >
+        </div>
+        <!-- Painting Artist -->
+        <div class="">
+          <h3 class="text-sm font-normal leading-normal opacity-[0.7528]">
+            Johannes Vermeer
+          </h3>
+        </div>
+      </div>
+      <!-- Guernica -->
+      <div
+        class="box3 flex h-[17.8125rem] w-[20.4375rem] flex-col justify-end bg-[url('/images/guernica/thumbnail.jpg')] bg-cover bg-no-repeat pb-8 pl-8 text-[#fff] md:w-[20.25rem] lg:w-[19.375rem]"
+      >
+        <!--Painting Name  -->
+        <div class="w-[15.375rem]">
+          <a href="/guernica" class="text-2xl font-bold leading-normal"
+            >Guernica</a
+          >
+        </div>
+        <!-- Painting Artist -->
+        <div class="">
+          <h3 class="text-sm font-normal leading-normal opacity-[0.7528]">
+            Pablo Picasso
+          </h3>
+        </div>
+      </div>
+      <!-- Penitent Magdalene -->
+      <div
+        class="box4 flex h-[15.625rem] w-[20.4375rem] flex-col justify-end bg-[url('/images/penitent-magdalene/thumbnail.jpg')] bg-cover bg-no-repeat pb-8 pl-8 text-[#fff] md:w-[20.25rem] lg:w-[19.375rem]"
+      >
+        <!--Painting Name  -->
+        <div class="w-[15.375rem]">
+          <a
+            href="/penitent-magdalene"
+            class="text-2xl font-bold leading-normal">Penitent Magdalene</a
+          >
+        </div>
+        <!-- Painting Artist -->
+        <div class="">
+          <h3 class="text-sm font-normal leading-normal opacity-[0.7528]">
+            Artemisia Gentileschi
+          </h3>
+        </div>
+      </div>
+      <!-- The Storm on the Sea of Galilee -->
+      <div
+        class="box5 flex h-[21.25rem] w-[20.4375rem] flex-col justify-end bg-[url('/images/the-storm-on-the-sea-of-galilee/thumbnail.jpg')] bg-cover bg-no-repeat pb-8 pl-8 text-[#fff] md:w-[20.25rem] lg:w-[19.375rem]"
+      >
+        <!--Painting Name  -->
+        <div class="w-[15.375rem]">
+          <a
+            href="/the-storm-on-the-sea-of-galilee"
+            class="text-2xl font-bold leading-normal"
+            >The Storm on the Sea of Galilee</a
+          >
+        </div>
+        <!-- Painting Artist -->
+        <div class="">
+          <h3 class="text-sm font-normal leading-normal opacity-[0.7528]">
+            Rembrandt
+          </h3>
+        </div>
+      </div>
+      <!-- The Great Wave off Kanagawa -->
+      <div
+        class="box6 flex h-[17.5rem] w-[20.4375rem] flex-col justify-end bg-[url('/images/the-great-wave-off-kanagawa/thumbnail.jpg')] bg-cover bg-no-repeat pb-8 pl-8 text-[#fff] md:w-[20.25rem] lg:w-[19.375rem]"
+      >
+        <!--Painting Name  -->
+        <div class="w-[15.375rem]">
+          <a
+            href="/the-great-wave-off-kanagawa"
+            class="text-2xl font-bold leading-normal"
+            >The Great Wave off Kanagawa</a
+          >
+        </div>
+        <!-- Painting Artist -->
+        <div class="">
+          <h3 class="text-sm font-normal leading-normal opacity-[0.7528]">
+            Hokusai
+          </h3>
+        </div>
+      </div>
+      <!-- Van Gogh self-portrait -->
+      <div
+        class="box7 flex h-[31.25rem] w-[20.4375rem] flex-col justify-end bg-[url('/images/van-gogh-self-portrait/thumbnail.jpg')] bg-cover bg-no-repeat pb-8 pl-8 text-[#fff] md:w-[20.25rem] lg:w-[19.375rem]"
+      >
+        <!--Painting Name  -->
+        <div class="w-[15.375rem]">
+          <a
+            href="/van-gogh-self-portrait"
+            class="text-2xl font-bold leading-normal">Van Gogh self-portrait</a
+          >
+        </div>
+        <!-- Painting Artist -->
+        <div class="">
+          <h3 class="text-sm font-normal leading-normal opacity-[0.7528]">
+            Vincent van Gogh
+          </h3>
+        </div>
+      </div>
+      <!-- The Sleeping Gypsy -->
+      <div
+        class="box8 flex h-[15.625rem] w-[20.4375rem] flex-col justify-end bg-[url('/images/the-sleeping-gypsy/thumbnail.jpg')] bg-cover bg-no-repeat pb-8 pl-8 text-[#fff] md:w-[20.25rem] lg:w-[19.375rem]"
+      >
+        <!--Painting Name  -->
+        <div class="w-[15.375rem]">
+          <a
+            href="/the-sleeping-gypsy"
+            class="text-2xl font-bold leading-normal">The Sleeping Gypsy</a
+          >
+        </div>
+        <!-- Painting Artist -->
+        <div class="">
+          <h3 class="text-sm font-normal leading-normal opacity-[0.7528]">
+            Henri Rousseau
+          </h3>
+        </div>
+      </div>
+      <!-- Lady with an Ermin -->
+      <div
+        class="box9 flex h-[26.25rem] w-[20.4375rem] flex-col justify-end bg-[url('/images/lady-with-an-ermine/thumbnail.jpg')] bg-cover bg-no-repeat pb-8 pl-8 text-[#fff] md:w-[20.25rem] lg:w-[19.375rem]"
+      >
+        <!--Painting Name  -->
+        <div class="w-[15.375rem]">
+          <a
+            href="/lady-with-an-ermine"
+            class="text-2xl font-bold leading-normal">Lady with an Ermin</a
+          >
+        </div>
+        <!-- Painting Artist -->
+        <div class="">
+          <h3 class="text-sm font-normal leading-normal opacity-[0.7528]">
+            Leonardo da Vinci
+          </h3>
+        </div>
+      </div>
+      <!-- The Night Café -->
+      <div
+        class="box10 flex h-[16.25rem] w-[20.4375rem] flex-col justify-end bg-[url('/images/the-night-cafe/thumbnail.jpg')] bg-cover bg-no-repeat pb-8 pl-8 text-[#fff] md:w-[20.25rem] lg:w-[19.375rem]"
+      >
+        <!--Painting Name  -->
+        <div class="w-[15.375rem]">
+          <a href="/the-night-cafe" class="text-2xl font-bold leading-normal"
+            >The Night Café</a
+          >
+        </div>
+        <!-- Painting Artist -->
+        <div class="">
+          <h3 class="text-sm font-normal leading-normal opacity-[0.7528]">
+            Vincent van Gogh
+          </h3>
+        </div>
+      </div>
+      <!-- The Basket of Apples -->
+      <div
+        class="box11 flex h-[26.875rem] w-[20.4375rem] flex-col justify-end bg-[url('/images/the-basket-of-apples/thumbnail.jpg')] bg-cover bg-no-repeat pb-8 pl-8 text-[#fff] md:w-[20.25rem] lg:w-[19.375rem]"
+      >
+        <!--Painting Name  -->
+        <div class="w-[15.375rem]">
+          <a
+            href="/the-basket-of-apples"
+            class="text-2xl font-bold leading-normal">The Basket of Apples</a
+          >
+        </div>
+        <!-- Painting Artist -->
+        <div class="">
+          <h3 class="text-sm font-normal leading-normal opacity-[0.7528]">
+            Paul Cézanne
+          </h3>
+        </div>
+      </div>
+      <!-- The Boy in the Red Vest -->
+      <div
+        class="box12 flex h-[16.25rem] w-[20.4375rem] flex-col justify-end bg-[url('/images/the-boy-in-the-red-vest/thumbnail.jpg')] bg-cover bg-no-repeat pb-8 pl-8 text-[#fff] md:w-[20.25rem] lg:w-[19.375rem]"
+      >
+        <!--Painting Name  -->
+        <div class="w-[15.375rem]">
+          <a
+            href="/the-boy-in-the-red-vest"
+            class="text-2xl font-bold leading-normal">The Boy in the Red Vest</a
+          >
+        </div>
+        <!-- Painting Artist -->
+        <div class="">
+          <h3 class="text-sm font-normal leading-normal opacity-[0.7528]">
+            Edward Hopper
+          </h3>
+        </div>
+      </div>
+      <!-- Arnolfini Portrait -->
+      <div
+        class="box13 flex h-[20.625rem] w-[20.4375rem] flex-col justify-end bg-[url('/images/arnolfini-portrait/thumbnail.jpg')] bg-cover bg-no-repeat pb-8 pl-8 text-[#fff] md:w-[20.25rem] lg:w-[19.375rem]"
+      >
+        <!--Painting Name  -->
+        <div class="w-[15.375rem]">
+          <a
+            href="/arnolfini-portrait"
+            class="text-2xl font-bold leading-normal">Arnolfini Portraitt</a
+          >
+        </div>
+        <!-- Painting Artist -->
+        <div class="">
+          <h3 class="text-sm font-normal leading-normal opacity-[0.7528]">
+            Jan van Eyck
+          </h3>
+        </div>
+      </div>
+      <!-- Mona Lisa -->
+      <div
+        class="box14 flex h-[32.8125rem] w-[20.4375rem] flex-col justify-end bg-[url('/images/mona-lisa/thumbnail.jpg')] bg-cover bg-no-repeat pb-8 pl-8 text-[#fff] md:w-[20.25rem] lg:w-[19.375rem]"
+      >
+        <!--Painting Name  -->
+        <div class="w-[15.375rem]">
+          <a href="/mona-lisa" class="text-2xl font-bold leading-normal"
+            >Mona Lisa</a
+          >
+        </div>
+        <!-- Painting Artist -->
+        <div class="">
+          <h3 class="text-sm font-normal leading-normal opacity-[0.7528]">
+            Leonardo da Vinci
+          </h3>
+        </div>
+      </div>
+      <!-- The Swing -->
+      <div
+        class="box15 flex h-[21.25rem] w-[20.4375rem] flex-col justify-end bg-[url('/images/the-swing/thumbnail.jpg')] bg-cover bg-no-repeat pb-8 pl-8 text-[#fff] md:w-[20.25rem] lg:w-[19.375rem]"
+      >
+        <!--Painting Name  -->
+        <div class="w-[15.375rem]">
+          <a href="/the-swing" class="text-2xl font-bold leading-normal"
+            >The Swing</a
+          >
+        </div>
+        <!-- Painting Artist -->
+        <div class="">
+          <h3 class="text-sm font-normal leading-normal opacity-[0.7528]">
+            Jean-Honoré Fragonard
+          </h3>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
-
-<style></style>

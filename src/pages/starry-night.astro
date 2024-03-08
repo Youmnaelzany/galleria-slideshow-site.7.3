@@ -1,0 +1,139 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+---
+
+<Layout title="Frontend Mentor | Galleria slideshow site">
+  <header
+    class="mx-6 mb-[1.44rem] mt-6 flex items-center justify-between gap-[5.31rem]
+  md:mx-10 md:mb-[1.69rem] md:mt-[1.81rem] md:gap-[25.18rem] lg:mx-10 lg:my-10 lg:gap-[63.65rem]"
+  >
+    <a href="/" class="">
+      <img
+        src="/images/shared/logo.svg"
+        alt=""
+        class="w-[7.065rem] lg:w-[10.5975rem]"
+      />
+    </a>
+    <a
+      href="/"
+      class="text-[0.5625rem] font-bold leading-normal tracking-[0.12056rem] text-[#7D7D7D]
+     transition-colors duration-500 ease-linear hover:text-[#000] md:max-xl:text-xs md:max-xl:tracking-[0.16069rem]"
+      >STOP SLIDESHOW</a
+    >
+  </header>
+
+  <main>
+    <!-- Top Border -->
+    <section class="h-[0.0625rem] w-[83.5rem] bg-[#E5E5E5] lg:mx-6"></section>
+    <!-- The Painting -->
+    <section class="relative mx-6 mt-6">
+      <picture>
+        <source
+          media="(min-width:1024px )"
+          srcset="/images/starry-night/hero-large.jpg"
+        />
+        <source
+          media="(min-width:768px )"
+          srcset="/images/starry-night/hero-large.jpg"
+        />
+        <img src="/images/starry-night/hero-small.jpg" alt="" class="" />
+      </picture>
+      <div
+        class="absolute left-4 top-4 flex h-10 w-[9.5rem] items-center justify-center gap-[0.88rem] bg-[#000] bg-opacity-[0.7546]"
+      >
+        <div class="">
+          <img src="/images/shared/icon-view-image.svg" alt="" class="" />
+        </div>
+        <button
+          type="button"
+          class="text-[0.625rem] font-bold uppercase leading-normal tracking-[0.13394rem] text-[#fff]"
+        >
+          View image
+        </button>
+      </div>
+      <div
+        class="absolute -bottom-10 flex h-[6.5rem] w-[17.5rem] flex-col gap-2 bg-[#fff] p-6"
+      >
+        <h2
+          class="w-[14.5rem] text-2xl font-bold leading-[1.8125rem] text-[#000]"
+        >
+          Starry Night
+        </h2>
+        <h3
+          class="w-[14.5rem] text-[0.9375rem] font-normal leading-normal text-[#847373]"
+        >
+          Vincent Van Gogh
+        </h3>
+      </div>
+    </section>
+    <!-- Painting Detailes -->
+    <section class="0 m-6 mb-[4.09rem] mt-[2.70rem]">
+      <div class="ml-4">
+        <img src="/images/starry-night/artist.jpg" alt="" class="size-16" />
+      </div>
+      <div
+        class="relative mt-[3.38rem] w-[20.4375rem] before:absolute before:-top-[4.5rem] before:left-[5.56rem] before:z-0 before:text-[6.25rem] before:font-bold before:leading-[6.25rem] before:text-[#F3F3F3] before:content-['1889']"
+      >
+        <p class="z-50 text-sm font-bold leading-7 text-[#7D7D7D]">
+          Although The Starry Night was painted during the day in Van Gogh's
+          ground-floor studio, it would be inaccurate to state that the picture
+          was painted from memory. The view has been identified as the one from
+          his bedroom window, facing east, a view which Van Gogh painted
+          variations of no fewer than twenty-one times, including The Starry
+          Night. "Through the iron-barred window," he wrote to his brother,
+          Theo, around 23 May 1889, "I can see an enclosed square of wheat ...
+          above which, in the morning, I watch the sun rise in all its glory."
+        </p>
+      </div>
+      <div class="mt-[4.25rem]">
+        <a
+          href="https://en.wikipedia.org/wiki/The_Starry_Night"
+          class="text-sm font-bold leading-7 text-[#7D7D7D] underline"
+          >Go to source</a
+        >
+      </div>
+    </section>
+    <!-- Slideshow -->
+    <section class="mx-6 my-[1.06rem] flex items-center justify-between">
+      <div class="flex flex-col gap-2">
+        <h2 class="text-sm font-bold leading-normal text-[#000]">
+          Starry Night
+        </h2>
+        <h3
+          class="text-[0.625rem] font-normal leading-normal text-[#000] opacity-[0.7528]"
+        >
+          Vincent Van Gogh
+        </h3>
+      </div>
+      <div class="flex items-center justify-between gap-8">
+        <div class="">
+          <a href="/starry-night" class="">
+            <svg width="26" height="24" xmlns="http://www.w3.org/2000/svg"
+              ><g stroke="#000" fill="none" fill-rule="evenodd"
+                ><path
+                  d="M24.166 1.843L3.627 12.113l20.539 10.269V1.843z"
+                  stroke-width="2"></path><path
+                  fill="#D8D8D8"
+                  d="M.986.5h-1v22.775h1z"></path></g
+              ></svg
+            >
+          </a>
+        </div>
+        <div class="">
+          <a href="/girl-with-pearl-earring" class="">
+            <svg width="26" height="24" xmlns="http://www.w3.org/2000/svg"
+              ><g stroke="#000" fill="none" fill-rule="evenodd"
+                ><path
+                  d="M1.528 1.843l20.538 10.27L1.528 22.382V1.843z"
+                  stroke-width="2"></path><path
+                  fill="#D8D8D8"
+                  d="M24.708.5h1v22.775h-1z"></path></g
+              ></svg
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
